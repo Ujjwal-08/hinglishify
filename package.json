@@ -1,0 +1,73 @@
+{
+  "name": "hinglish",
+  "version": "1.0.0",
+  "description": "Rule-based Hinglish to Devanagari transliteration, romanisation and Hindi URL slugs. Offline, zero dependencies.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "bin": {
+    "hinglish": "./bin/hinglish.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "hinglish",
+    "hindi",
+    "devanagari",
+    "transliteration",
+    "romanization",
+    "slug",
+    "slugify",
+    "indic",
+    "itrans",
+    "i18n",
+    "unicode",
+    "cli"
+  ],
+  "author": "Ujjwal Dadhich",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ujjwal-08/hinglish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ujjwal-08/hinglish/issues"
+  },
+  "homepage": "https://github.com/Ujjwal-08/hinglish#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "semantic-release": "^25.0.3"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/cw/BABU_ISHU"
+    },
+    {
+      "type": "individual",
+      "url": "https://www.paypal.com/ncp/payment/SECBQ62TRZZ6Y"
+    }
+  ]
+}
