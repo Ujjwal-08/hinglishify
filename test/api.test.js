@@ -17,7 +17,7 @@ import {
 } from "../index.js";
 
 const run = promisify(execFile);
-const cli = join(dirname(fileURLToPath(import.meta.url)), "..", "bin", "hinglish.js");
+const cli = join(dirname(fileURLToPath(import.meta.url)), "..", "bin", "hinglishify.js");
 
 test("isDevanagari is true only for Devanagari text without Latin letters", () => {
     assert.equal(isDevanagari("नमस्ते"), true);

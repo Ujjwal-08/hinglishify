@@ -4,19 +4,19 @@ Convert romanised Hindi (Hinglish) to Devanagari and back, and make URL-safe slu
 Hindi text. Rule-based, offline, zero dependencies.
 
 ```
-$ npx hinglish "kaise ho"
+$ npx hinglishify "kaise ho"
 कैसे हो
 
-$ npx hinglish "mera naam Ujjwal hai aur yeh mera blog post hai"
+$ npx hinglishify "mera naam Ujjwal hai aur yeh mera blog post hai"
 मेरा नाम Ujjwal है और यह मेरा blog post है
 
-$ npx hinglish --latin "नमस्ते दुनिया"
+$ npx hinglishify --latin "नमस्ते दुनिया"
 namaste duniya
 
-$ npx hinglish --slug "मेरा Blog पोस्ट #1"
+$ npx hinglishify --slug "मेरा Blog पोस्ट #1"
 mera-blog-post-1
 
-$ printf 'namaste dost\nzindagi ek safar hai\n' | npx hinglish
+$ printf 'namaste dost\nzindagi ek safar hai\n' | npx hinglishify
 नमस्ते दोस्त
 ज़िंदगी एक सफ़र है
 ```
@@ -24,11 +24,11 @@ $ printf 'namaste dost\nzindagi ek safar hai\n' | npx hinglish
 ## Install
 
 ```sh
-npx hinglish "kaise ho"
+npx hinglishify "kaise ho"
 ```
 
 ```sh
-npm i hinglish
+npm i hinglishify
 ```
 
 Node 18 or newer. ESM only.
@@ -73,7 +73,7 @@ Text can come from arguments or from stdin. Each input line is converted separat
 ### API
 
 ```js
-import { toDevanagari, toLatin, slugify, isHinglish, addWords } from "hinglish";
+import { toDevanagari, toLatin, slugify, isHinglish, addWords } from "hinglishify";
 
 toDevanagari("namaste duniya");        // नमस्ते दुनिया
 toDevanagari("mera naam Ujjwal hai");  // मेरा नाम Ujjwal है
@@ -214,7 +214,7 @@ library gets common text right and will get uncommon text wrong. Known cases:
 Anything the rules get wrong is one line away from being right:
 
 ```js
-import { dictionary, addWords } from "hinglish";
+import { dictionary, addWords } from "hinglishify";
 
 addWords({ "jugaad": "जुगाड़" });
 ```

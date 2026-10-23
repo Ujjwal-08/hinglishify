@@ -1,5 +1,5 @@
 {
-  "name": "hinglish",
+  "name": "hinglishify",
   "version": "1.0.0",
   "description": "Rule-based Hinglish to Devanagari transliteration, romanisation and Hindi URL slugs. Offline, zero dependencies.",
   "type": "module",
@@ -12,7 +12,7 @@
     }
   },
   "bin": {
-    "hinglish": "bin/hinglish.js"
+    "hinglishify": "bin/hinglishify.js"
   },
   "files": [
     "index.js",
@@ -43,12 +43,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ujjwal-08/hinglish.git"
+    "url": "git+https://github.com/Ujjwal-08/hinglishify.git"
   },
   "bugs": {
-    "url": "https://github.com/Ujjwal-08/hinglish/issues"
+    "url": "https://github.com/Ujjwal-08/hinglishify/issues"
   },
-  "homepage": "https://github.com/Ujjwal-08/hinglish#readme",
+  "homepage": "https://github.com/Ujjwal-08/hinglishify#readme",
   "engines": {
     "node": ">=18"
   },
