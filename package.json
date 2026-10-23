@@ -12,7 +12,7 @@
     }
   },
   "bin": {
-    "hinglish": "./bin/hinglish.js"
+    "hinglish": "bin/hinglish.js"
   },
   "files": [
     "index.js",
